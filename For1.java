@@ -1,8 +1,8 @@
-public class For1 extends Thread{
+public class For1 extends Thread {
 
-    public void run(){
+    public void run() {
         int x = 0;
-        for (int i = 0; i < 50; i++){
+        for (int i = 0; i < 50; i++) {
             x = x + 2;
             System.out.println("Executando For 1");
             try {
@@ -10,6 +10,7 @@ public class For1 extends Thread{
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
             }
+            System.out.println("Valor final de x: " + x);
         }
     }
 }
